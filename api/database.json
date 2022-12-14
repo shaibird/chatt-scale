@@ -1,0 +1,690 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Shaina Bird",
+      "email": "shayshayshay@shay.com",
+      "apeIndex": -4,
+      "birthDate": "1993-07-21",
+      "height": 175.25,
+      "username": "Birdybird"
+    },
+    {
+      "email": "test@test.com",
+      "fullName": "Test Dummy",
+      "userName": "TestingTesting",
+      "id": 2
+    }
+  ],
+  "crags": [
+    {
+      "id": 1,
+      "cragName": "Stone Fort",
+      "lat": 35.247716,
+      "lon": -85.21987,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 2,
+      "cragName": "Dogwood",
+      "lat": 35.498646,
+      "lon": -85.081101,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 3,
+      "cragName": "Apartment Boulders",
+      "lat": 35.119645,
+      "lon": -85.319962,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 4,
+      "cragName": "Upper Middle Creek",
+      "lat": 35.147895,
+      "lon": -85.352076,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 5,
+      "cragName": "Conner Creek",
+      "lat": 35.165989,
+      "lon": -85.379355,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 6,
+      "cragName": "Laurel Snow Pocket Wilderness",
+      "lat": 35.528425,
+      "lon": -85.022223,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 7,
+      "cragName": "Cumberland Boulders",
+      "lat": 35.26351,
+      "lon": -85.189802,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 8,
+      "cragName": "Suck Creek",
+      "lat": 35.145568,
+      "lon": -85.388239,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 9,
+      "cragName": "Lower Middle Creek",
+      "lat": 35.122742,
+      "lon": -85.3725,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 10,
+      "cragName": "Hell's Kitchen",
+      "lat": 35.475767,
+      "lon": -85.107419,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 11,
+      "cragName": "Zahnd",
+      "lat": 34.652713,
+      "lon": -85.472353,
+      "state": "Georgia",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 12,
+      "cragName": "Morgan Creek",
+      "lat": 35.538501,
+      "lon": -85.037523,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 13,
+      "cragName": "Caney Fork",
+      "lat": 35.845558,
+      "lon": -85.250274,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 14,
+      "cragName": "Rocktown",
+      "lat": 34.658958,
+      "lon": -85.389721,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 15,
+      "cragName": "The Obed",
+      "lat": 36.103276,
+      "lon": -84.713592,
+      "state": "Tennessee",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 16,
+      "cragName": "Horse Pens 40",
+      "lat": 33.923137,
+      "lon": -86.307194,
+      "state": "Alabama",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 17,
+      "cragName": "Hospital Boulders",
+      "lat": 34.076257,
+      "lon": -86.018652,
+      "state": "Alabama",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 18,
+      "cragName": "Rumbling Bald",
+      "lat": 35.448934,
+      "lon": 82.217037,
+      "state": "North Carolina",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 19,
+      "cragName": "Moores Wall",
+      "lat": 36.399441,
+      "lon": 80.290565,
+      "state": "North Carolina",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 20,
+      "cragName": "Linville Gorge",
+      "lat": 35.904931,
+      "lon": 81.895244,
+      "state": "North Carolina",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 21,
+      "cragName": "Grayson Highlands",
+      "lat": 36.625068,
+      "lon": 81.498931,
+      "state": "Virginia",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 22,
+      "cragName": "New River Gorge",
+      "lat": 37.877465,
+      "lon": 81.019192,
+      "state": "West Virginia",
+      "country": "United-States",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    },
+    {
+      "id": 23,
+      "cragName": "Fontainebleau",
+      "lat": 48.392466,
+      "lon": 2.559068,
+      "state": "",
+      "country": "France",
+      "description": "",
+      "img": "",
+      "exposure": ""
+    }
+  ],
+  "boulders": [
+    {
+      "id": 1,
+      "boulderName": "Cleopatra",
+      "cragId": 1,
+      "sectorId": 1,
+      "boulderGradeId": 9,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2
+    },
+    {
+      "id": 2,
+      "boulderName": "Cinderella",
+      "cragId": 1,
+      "sectorId": 1,
+      "boulderGradeId": 8,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2
+    },
+    {
+      "id": 3,
+      "boulderName": "Pancake Mantle",
+      "cragId": 1,
+      "sectorId": 1,
+      "boulderGradeId": 5,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1
+    },
+    {
+      "id": 4,
+      "boulderName": "The Wave",
+      "cragId": 1,
+      "sectorId": 2,
+      "boulderGradeId": 7,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1
+    },
+    {
+      "id": 5,
+      "boulderName": "Genghis Khan",
+      "cragId": 1,
+      "sectorId": 2,
+      "boulderGradeId": 6,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2
+    },
+    {
+      "id": 6,
+      "boulderName": "El Cubano",
+      "cragId": 2,
+      "sectorId": 2,
+      "boulderGradeId": 6,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1
+    },
+    {
+      "id": 7,
+      "boulderName": "Storm Door",
+      "cragId": 2,
+      "sectorId": 4,
+      "boulderGradeId": 7,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2
+    },
+    {
+      "id": 8,
+      "boulderName": "Michelin Man",
+      "cragId": 2,
+      "sectorId": 5,
+      "boulderGradeId": 9,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 1
+    },
+    {
+      "id": 9,
+      "boulderName": "Roll It Up",
+      "cragId": 2,
+      "sectorId": 5,
+      "boulderGradeId": 8,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1
+    },
+    {
+      "id": 10,
+      "boulderName": "Cigar",
+      "cragId": 3,
+      "sectorId": "",
+      "boulderGradeId": 8,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 4
+    },
+    {
+      "id": 11,
+      "boulderName": "Mousetrap",
+      "cragId": 3,
+      "sectorId": "",
+      "boulderGradeId": 8,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 2
+    },
+    {
+      "id": 12,
+      "boulderName": "Rustoleum",
+      "cragId": 4,
+      "sectorId": "",
+      "boulderGradeId": 7,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 4
+    },
+    {
+      "id": 13,
+      "boulderName": "Bread and Butter",
+      "cragId": 4,
+      "sectorId": "",
+      "boulderGradeId": 8,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 4
+    },
+    {
+      "id": 14,
+      "boulderName": "The Frontiersman",
+      "cragId": 5,
+      "sectorId": 6,
+      "boulderGradeId": 10,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2
+    },
+    {
+      "id": 15,
+      "boulderName": "Nose Candy",
+      "cragId": 14,
+      "sectorId": 2,
+      "boulderGradeId": 7,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 2
+    }
+  ],
+  "sector": [
+    {
+      "id": 1,
+      "sectorName": "The Fairway",
+      "cragId": 1
+    },
+    {
+      "id": 2,
+      "sectorName": "The Front Area",
+      "cragId": 1
+    },
+    {
+      "id": 3,
+      "sectorName": "Starting Blocs",
+      "cragId": 2
+    },
+    {
+      "id": 4,
+      "sectorName": "Corridor",
+      "cragId": 2
+    },
+    {
+      "id": 5,
+      "sectorName": "Dogwood East",
+      "cragId": 3
+    },
+    {
+      "id": 6,
+      "sectorName": "The Pioneer Boulder",
+      "cragId": 5
+    },
+    {
+      "id": 7,
+      "sectorName": "Sherman Roof",
+      "cragId": 14
+    }
+  ],
+  "boulderGrades": [
+    {
+      "id": 1,
+      "boulderGrade": "v0",
+      "points": 1
+    },
+    {
+      "id": 2,
+      "boulderGrade": "v1",
+      "points": 2
+    },
+    {
+      "id": 3,
+      "boulderGrade": "v2",
+      "points": 3
+    },
+    {
+      "id": 4,
+      "boulderGrade": "v3",
+      "points": 4
+    },
+    {
+      "id": 5,
+      "boulderGrade": "v4",
+      "points": 5
+    },
+    {
+      "id": 6,
+      "boulderGrade": "v5",
+      "points": 6
+    },
+    {
+      "id": 7,
+      "boulderGrade": "v6",
+      "points": 7
+    },
+    {
+      "id": 8,
+      "boulderGrade": "v7",
+      "points": 8
+    },
+    {
+      "id": 9,
+      "boulderGrade": "v8",
+      "points": 9
+    },
+    {
+      "id": 10,
+      "boulderGrade": "v9",
+      "points": 10
+    },
+    {
+      "id": 11,
+      "boulderGrade": "v10",
+      "points": 11
+    },
+    {
+      "id": 12,
+      "boulderGrade": "v11",
+      "points": 12
+    },
+    {
+      "id": 13,
+      "boulderGrade": "v12",
+      "points": 13
+    },
+    {
+      "id": 14,
+      "boulderGrade": "v13",
+      "points": 14
+    },
+    {
+      "id": 15,
+      "boulderGrade": "v14",
+      "points": 15
+    },
+    {
+      "id": 16,
+      "boulderGrade": "v15",
+      "points": 16
+    },
+    {
+      "id": 17,
+      "boulderGrade": "v16",
+      "points": 17
+    },
+    {
+      "id": 18,
+      "boulderGrade": "v17",
+      "points": 18
+    }
+  ],
+  "boulderSteeps": [
+    {
+      "id": 1,
+      "type": "steep"
+    },
+    {
+      "id": 2,
+      "type": "slab"
+    },
+    {
+      "id": 3,
+      "type": "vert"
+    }
+  ],
+  "boulderHoldTypes": [
+    {
+      "id": 1,
+      "type": "slopers"
+    },
+    {
+      "id": 2,
+      "type": "crimps"
+    },
+    {
+      "id": 3,
+      "type": "compression"
+    },
+    {
+      "id": 4,
+      "type": "jugs"
+    }
+  ],
+  "cragExposures": [
+    {
+      "id": 1,
+      "type": "creek"
+    },
+    {
+      "id": 2,
+      "type": "mountain top"
+    },
+    {
+      "id": 3,
+      "type": "mountain side"
+    }
+  ],
+  "boulderRatings": [
+    {
+      "id": 1,
+      "boulderRating": 1
+    },
+    {
+      "id": 2,
+      "boulderRating": 2
+    },
+    {
+      "id": 3,
+      "boulderRating": 3
+    },
+    {
+      "id": 4,
+      "boulderRating": 4
+    },
+    {
+      "id": 5,
+      "boulderRating": 5
+    }
+  ],
+  "userSendList": [
+    {
+      "boulderId": 1,
+      "comment": "Finally made it happen! ",
+      "sendDate": "2022-12-01",
+      "boulderRatingId": 2,
+      "boulderGradeId": 9,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "boulderId": 5,
+      "comment": "test",
+      "sendDate": "2022-12-07",
+      "boulderRatingId": 5,
+      "boulderGradeId": 6,
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "boulderId": 1,
+      "comment": "repeat",
+      "sendDate": "2022-12-13",
+      "boulderRatingId": 5,
+      "boulderGradeId": 9,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "boulderId": 2,
+      "comment": "maybe",
+      "sendDate": "2022-12-07",
+      "boulderRatingId": 5,
+      "boulderGradeId": 8,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "boulderId": 4,
+      "comment": "Yay! I did it",
+      "sendDate": "2022-12-13",
+      "boulderRatingId": 5,
+      "boulderGradeId": 7,
+      "userId": 1,
+      "id": 8
+    }
+  ],
+  "userTickList": [
+    {
+      "boulderId": 4,
+      "boulderName": "The Wave",
+      "cragId": 1,
+      "sectorId": 2,
+      "boulderGradeId": 7,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "boulderId": 6,
+      "boulderName": "El Cubano",
+      "cragId": 2,
+      "sectorId": 2,
+      "boulderGradeId": 6,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "boulderId": 1,
+      "boulderName": "Cleopatra",
+      "cragId": 1,
+      "sectorId": 1,
+      "boulderGradeId": 9,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2,
+      "userId": 1,
+      "id": 3
+    }
+  ]
+}
