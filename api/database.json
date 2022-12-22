@@ -7,268 +7,330 @@
       "apeIndex": -4,
       "birthDate": "1993-07-21",
       "height": 175.25,
-      "username": "Birdybird"
+      "userName": "BirdyBird"
     },
     {
       "email": "test@test.com",
       "fullName": "Test Dummy",
       "userName": "TestingTesting",
       "id": 2
+    },
+    {
+      "email": "thunndathundathunda@email.com",
+      "fullName": "Thunder Storm",
+      "apeIndex": 0,
+      "height": 0,
+      "userName": "THUNDAAA",
+      "id": 3
+    },
+    {
+      "email": "heyhey@hey.com",
+      "fullName": "Shaina Couch",
+      "userName": "I broke it",
+      "apeIndex": -4,
+      "height": 175,
+      "id": 4
     }
   ],
   "crags": [
     {
       "id": 1,
       "cragName": "Stone Fort",
+      "city": "Soddy-Daisy",
       "lat": 35.247716,
       "lon": -85.21987,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 2,
       "cragName": "Dogwood",
+      "city":"Graysville",
       "lat": 35.498646,
       "lon": -85.081101,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 3,
       "cragName": "Apartment Boulders",
+      "city":"Chattanooga",
       "lat": 35.119645,
       "lon": -85.319962,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 4,
       "cragName": "Upper Middle Creek",
+      "city":"Chattanooga",
       "lat": 35.147895,
       "lon": -85.352076,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 5,
       "cragName": "Conner Creek",
+      "city":"Signal Mountain",
       "lat": 35.165989,
       "lon": -85.379355,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 6,
       "cragName": "Laurel Snow Pocket Wilderness",
+      "city":"Dayton",
       "lat": 35.528425,
       "lon": -85.022223,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 7,
       "cragName": "Cumberland Boulders",
+      "city":"Soddy-Daisy",
       "lat": 35.26351,
       "lon": -85.189802,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 8,
       "cragName": "Suck Creek",
+      "city":"Chattanooga",
       "lat": 35.145568,
       "lon": -85.388239,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 9,
       "cragName": "Lower Middle Creek",
       "lat": 35.122742,
       "lon": -85.3725,
+      "city":"Chattanooga",
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 10,
       "cragName": "Hell's Kitchen",
+      "city":"Graysville",
       "lat": 35.475767,
       "lon": -85.107419,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 11,
       "cragName": "Zahnd",
+      "city":"Menlo",
       "lat": 34.652713,
       "lon": -85.472353,
       "state": "Georgia",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 12,
       "cragName": "Morgan Creek",
+      "city":"Dayton",
       "lat": 35.538501,
       "lon": -85.037523,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 13,
       "cragName": "Caney Fork",
+      "city":"Sparta",
       "lat": 35.845558,
       "lon": -85.250274,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 14,
       "cragName": "Rocktown",
+      "city":"Lafayette",
       "lat": 34.658958,
       "lon": -85.389721,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access"
     },
     {
       "id": 15,
       "cragName": "The Obed",
+      "city":"Lancing",
       "lat": 36.103276,
       "lon": -84.713592,
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 16,
       "cragName": "Horse Pens 40",
+      "city":"Steele",
       "lat": 33.923137,
       "lon": -86.307194,
       "state": "Alabama",
       "country": "United-States",
-      "description": "",
+      "description": "Highly concentrated boulderfield with incredible rock quality. Home of notable climbs like 'BumBoys' and 'God Module'",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":"Privately owned boulderfield. Pay at the shop at the parking lot. No dogs allowed"
     },
     {
       "id": 17,
       "cragName": "Hospital Boulders",
+      "city":"Gadsden",
       "lat": 34.076257,
       "lon": -86.018652,
       "state": "Alabama",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":"SCC owned, a gate code is required for access. Gate code can be found on the SCC website."
     },
     {
       "id": 18,
       "cragName": "Rumbling Bald",
+      "city":"Lake Lure",
       "lat": 35.448934,
       "lon": 82.217037,
       "state": "North Carolina",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 19,
       "cragName": "Moores Wall",
+      "city":"Winston-Salem",
       "lat": 36.399441,
       "lon": 80.290565,
       "state": "North Carolina",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 20,
       "cragName": "Linville Gorge",
+      "city":"Linville",
       "lat": 35.904931,
       "lon": 81.895244,
       "state": "North Carolina",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 21,
       "cragName": "Grayson Highlands",
+      "city":"Mouth of Wilson",
       "lat": 36.625068,
       "lon": 81.498931,
       "state": "Virginia",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 22,
       "cragName": "New River Gorge",
+      "city": "Lansing",
       "lat": 37.877465,
       "lon": 81.019192,
       "state": "West Virginia",
       "country": "United-States",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     },
     {
       "id": 23,
       "cragName": "Fontainebleau",
+      "city":"",
       "lat": 48.392466,
       "lon": 2.559068,
       "state": "",
       "country": "France",
       "description": "",
       "img": "",
-      "exposure": ""
+      "exposure": "",
+      "access":""
     }
   ],
   "boulders": [
@@ -625,31 +687,49 @@
       "id": 5
     },
     {
-      "boulderId": 1,
-      "comment": "repeat",
-      "sendDate": "2022-12-13",
-      "boulderRatingId": 5,
-      "boulderGradeId": 9,
-      "userId": 1,
-      "id": 6
+      "boulderId": 13,
+      "comment": "SOFFT",
+      "sendDate": "2022-12-01",
+      "boulderRatingId": 3,
+      "boulderGradeId": 8,
+      "userId": 3,
+      "id": 9
     },
     {
-      "boulderId": 2,
-      "comment": "maybe",
-      "sendDate": "2022-12-07",
+      "boulderId": 1,
+      "comment": "maybe?",
+      "sendDate": "2022-12-09",
       "boulderRatingId": 5,
-      "boulderGradeId": 8,
-      "userId": 1,
-      "id": 7
+      "boulderGradeId": 9,
+      "userId": 3,
+      "id": 10
     },
     {
       "boulderId": 4,
-      "comment": "Yay! I did it",
-      "sendDate": "2022-12-13",
-      "boulderRatingId": 5,
-      "boulderGradeId": 7,
+      "comment": "fads",
+      "sendDate": "2022-12-14",
+      "boulderRatingId": 2,
+      "boulderGradeId": 4,
       "userId": 1,
-      "id": 8
+      "id": 11
+    },
+    {
+      "boulderId": 3,
+      "comment": "mind blown",
+      "sendDate": "2022-12-21",
+      "boulderRatingId": 3,
+      "boulderGradeId": 10,
+      "userId": 1,
+      "id": 12
+    },
+    {
+      "boulderId": 5,
+      "comment": "Yay",
+      "sendDate": "2022-12-07",
+      "boulderRatingId": 4,
+      "boulderGradeId": 6,
+      "userId": 4,
+      "id": 13
     }
   ],
   "userTickList": [
@@ -661,30 +741,96 @@
       "boulderGradeId": 7,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 1,
-      "userId": 1,
-      "id": 1
+      "userId": 3,
+      "id": 4
     },
     {
-      "boulderId": 6,
-      "boulderName": "El Cubano",
-      "cragId": 2,
+      "boulderId": 2,
+      "boulderName": "Cinderella",
+      "cragId": 1,
+      "sectorId": 1,
+      "boulderGradeId": 8,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2,
+      "userId": 3,
+      "id": 5
+    },
+    {
+      "boulderId": 11,
+      "boulderName": "Mousetrap",
+      "cragId": 3,
+      "sectorId": "",
+      "boulderGradeId": 8,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 2,
+      "userId": 3,
+      "id": 6
+    },
+    {
+      "boulderId": 5,
+      "boulderName": "Genghis Khan",
+      "cragId": 1,
       "sectorId": 2,
       "boulderGradeId": 6,
       "boulderSteepId": 3,
-      "boulderHoldTypeId": 1,
+      "boulderHoldTypeId": 2,
       "userId": 1,
-      "id": 2
+      "id": 7
     },
     {
-      "boulderId": 1,
-      "boulderName": "Cleopatra",
+      "boulderId": 5,
+      "boulderName": "Genghis Khan",
       "cragId": 1,
-      "sectorId": 1,
-      "boulderGradeId": 9,
+      "sectorId": 2,
+      "boulderGradeId": 6,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
       "userId": 1,
-      "id": 3
+      "id": 8
+    },
+    {
+      "boulderId": 4,
+      "boulderName": "The Wave",
+      "cragId": 1,
+      "sectorId": 2,
+      "boulderGradeId": 7,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1,
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "boulderId": 3,
+      "boulderName": "Pancake Mantle",
+      "cragId": 1,
+      "sectorId": 1,
+      "boulderGradeId": 5,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1,
+      "userId": 1,
+      "id": 10
+    },
+    {
+      "boulderId": 3,
+      "boulderName": "Pancake Mantle",
+      "cragId": 1,
+      "sectorId": 1,
+      "boulderGradeId": 5,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 1,
+      "userId": 4,
+      "id": 12
+    },
+    {
+      "boulderId": 5,
+      "boulderName": "Genghis Khan",
+      "cragId": 1,
+      "sectorId": 2,
+      "boulderGradeId": 6,
+      "boulderSteepId": 3,
+      "boulderHoldTypeId": 2,
+      "userId": 4,
+      "id": 13
     }
   ]
 }

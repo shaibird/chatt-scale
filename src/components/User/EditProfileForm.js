@@ -14,7 +14,7 @@ export const EditProfileForm = ({ setModal }) => {
     }, [feedback])
 
     const [profile, updateProfile] = useState({
-        username: "",
+        userName: "",
         email: "",
         apeIndex: 0,
         height: 0
@@ -54,6 +54,9 @@ export const EditProfileForm = ({ setModal }) => {
             .then(() => {
                 setFeedback("Userprofile successfully saved")
             })
+            .then(() => {
+                setModal(false)
+            })
     }
 
     <div className={`${feedback.includes("Error") ? "error" : "feedback"} ${feedback === "" ? "invisible" : "visible"}`}>
@@ -75,11 +78,11 @@ export const EditProfileForm = ({ setModal }) => {
                                     required autoFocus
                                     type="text"
                                     className="form-control"
-                                    value={profile.username}
+                                    value={profile.userName}
                                     onChange={
                                         (evt) => {
                                             const copy = { ...profile }
-                                            copy.username = evt.target.value
+                                            copy.userName = evt.target.value
                                             updateProfile(copy)
                                         }
                                     } />
@@ -129,7 +132,7 @@ export const EditProfileForm = ({ setModal }) => {
                                     onChange={
                                         (evt) => {
                                             const copy = { ...profile }
-                                            copy.height = parseInt(evt.target.value)
+                                            copy.height = parseFloat(evt.target.value, 2)
                                             updateProfile(copy)
                                         }
                                     } />

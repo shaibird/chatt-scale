@@ -31,7 +31,16 @@ body {
 }
 
 .profile {
-    text-align:left;
+    text-align:center;
+}
+.piece {
+  text-align:left;
+}
+.panel-features {
+  display:flex;
+  flex-direction:column;
+  justify-content: left;
+  text-align:left,
 }
 
 .profile-panel {
@@ -47,6 +56,14 @@ body {
     justify-content: center;
     margin-top: 100px;
 }
+.profile h2 {
+  color:#3c6e71;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
 .profile-header {
   color:#3c6e71;
   font-weight: 600;
@@ -71,7 +88,7 @@ body {
   text-decoration: none;
   margin: 25px 0;
   transition: background-color 200ms ease-in-out;
-  justify-content: center;
+  text-align: center;
 }
 .send_delete {
     border: 1px solid #9dd1ff;
@@ -84,12 +101,5 @@ body {
   .panel {
     flex-direction: row;
   }
-  .pricing-plan {
-    border-bottom: none;
-    border-right: 1px solid #e1f1ff;
-    padding: 25px 50px;
-  }
-  .pricing-plan:last-child {
-    border-right: none;
-  }
+
 }

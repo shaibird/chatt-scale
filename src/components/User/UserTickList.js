@@ -6,10 +6,11 @@ import { Link, useNavigate } from "react-router-dom"
 import { UserTickDelete } from "./UserTickDelete"
 
 
-export const UserTickList = () => {
+export const UserTickList = ({getSends}) => {
     const [userTicks, setUserTicks] = useState([])
     const [filteredBoulders, setFilteredBoulders] = useState([])
     const [modal, setModal] = useState(false)
+    const [filtered, setFiltered] = useState([])
 
     const localScaleUser = localStorage.getItem("scale_user")
     const scaleUserObject = JSON.parse(localScaleUser)
@@ -19,7 +20,7 @@ export const UserTickList = () => {
     //This fetch gets the user specific tick list based on the user who is logged in. 
     const getAllTicks = () => {
 
-        fetch(`http://localhost:8088/userTickList?user=${scaleUserObject.id}&_expand=boulder&_expand=boulderGrade&_expand=boulderHoldType&_expand=boulderSteep&_expand=crag`)
+        fetch(`http://localhost:8088/userTickList?user&_expand=boulder&_expand=boulderGrade&_expand=boulderHoldType&_expand=boulderSteep&_expand=crag`)
             .then(response => response.json())
             .then((data) => {
                 setUserTicks(data)
@@ -31,16 +32,23 @@ export const UserTickList = () => {
             getAllTicks()
         }, [])
 
+        useEffect(
+            () => {
+                const mySends = userTicks.filter(tick => tick.userId === scaleUserObject.id)
+                setFiltered(mySends)
+            }, [userTicks]
+        )
+    
     const toggleModal = () => {
         setModal(!modal)
     }
 
-console.log(userTicks)
+
     return <>
     <div className="profile-panel">
         <article className="userTickList" >
             <header className="profile-header">Tick List</header>
-            {userTicks.map(
+            {filtered.map(
                 (tick) => {
                     return <section className="TickList" key={`Tick--${tick.id}`} id={`${tick.id}`}>
                         <header>
@@ -58,7 +66,7 @@ console.log(userTicks)
         </article>
         </div>
 
-        {modal && <UserTickSendForm setModal={setModal} filteredBoulders={filteredBoulders} getTicks={getAllTicks} />}
+        {modal && <UserTickSendForm setModal={setModal} filteredBoulders={filteredBoulders} getTicks={getAllTicks} getSends={getSends}/>}
 
     </>
 }

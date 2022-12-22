@@ -3,16 +3,21 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useState } from "react"
 import { UserSendForm } from './UserSendForm'
 import { useNavigate } from 'react-router-dom'
+import { ConfirmationOfTick } from './ConfirmationOfTick'
+import { GetWeather } from '../weather/GetWeather'
+import { CragForecast } from '../weather/CragForecast'
+import "./CragDetails.css"
 
 
 export const CragDetails = () => {
     const { cragId } = useParams()
-    const [crags, updateCrag] = useState({})
+    const [crags, updateCrag] = useState([])
     const [boulders, setBoulders] = useState([])
     const [cragBoulders, setCragBoulders] = useState([])
     const [boulderGrades, setBoulderGrades] = useState([])
     const [modal, setModal] = useState(false)
-    const [filteredBoulders, setFilteredBoulders] = useState({})
+    const [filteredBoulders, setFilteredBoulders] = useState([])
+    const [tickModal, setTickModal] = useState(false)
 
     const localScaleUser = localStorage.getItem("scale_user")
     const scaleUserObject = JSON.parse(localScaleUser)
@@ -47,7 +52,7 @@ export const CragDetails = () => {
         })
             .then(response => response.json())
             .then(() => {
-                navigate("/crags")
+                toggleTickModal()
 
 
             })
@@ -99,37 +104,44 @@ export const CragDetails = () => {
         setModal(!modal)
     }
 
-    
+    const toggleTickModal = () => {
+        setTickModal(!modal)
+    }
 
+console.log(cragBoulders)
     return <>
         <article className="boulders" >
-            <header>{crags.cragName}</header>
+            <div className="boulderfield-details">
+                <header className="CragName">{crags.cragName}</header>
+                <div className="location">{crags.city}, {crags.state}</div>
+                <div className="crag-description"><div className="details-header">Description:</div> {crags.description}</div>
+                <div className="crag-access"><div className="details-header">Access:</div>{crags.access}</div>
+                </div>
+            <GetWeather crags={crags}/>
+            <div className="boulder-panel">
             {
                 cragBoulders.map(
                     (boulder) => {
                         return <section className="boulder" key={`boulder--${boulder.id}`} id={`${boulder.id}`}>
-                            <header>{boulder.boulderName}<button onClick={() => {
+                            <div className="Grade">{boulder.boulderGrade.boulderGrade}</div>
+                            <div className="Name">{boulder.boulderName}</div>
+                            <div className="buttons"><button className="details-tick" onClick={() => {
                                 setUserTick(boulder)
-                                }}>Add to Tick List</button> <button onClick={() => {
+                                toggleTickModal()
+                                }}>Add to Tick List</button> <button className="details-send" onClick={() => {
                                 setFilteredBoulders(boulder);
                                 toggleModal()
-                            }}>Log Send</button></header>
+                            }}>Log Send</button></div>
                         </section>
                     }
                 )
             }
+            </div>
         </article>
 
+        {tickModal && <ConfirmationOfTick setTickModal={setTickModal} setTick={userTick}/> }
         {modal && <UserSendForm setModal={setModal} filteredBoulders={filteredBoulders} />}
     </>
 
 }
 
-
-
-
-//once the crag is clicked on the main crags page, then this page will render. Here, we need the boulders in each crag to display
-//need to match 
-
-//use params to grb boulderId or pass props 
-//create new modula popup.js jsk pass the id as a prop. on click pop up, render the element . event.target.value. make a form, try and making it popup when clicked. 

@@ -43,9 +43,9 @@ export const UserTickSendForm = ({ setModal, filteredBoulders, getTicks, getSend
                 fetch(`http://localhost:8088/UserTickList/${filteredBoulders.id}`, {
                     method: "DELETE"
                 })
-                .then(() => {
-                    setModal(false)
-                })
+                    .then(() => {
+                        setModal(false)
+                    })
                     .then(() => {
                         getTicks()
                     })

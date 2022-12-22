@@ -8,6 +8,9 @@ export const Register = (props) => {
         email: "",
         fullName: "",
         userName: "",
+        apeIndex: 0,
+        height: 0
+
     })
     let navigate = useNavigate()
 
@@ -26,7 +29,7 @@ export const Register = (props) => {
                         id: createdUser.id,
                     }))
 
-                    navigate("/")
+                    navigate("/profile")
                 }
             })
     }
