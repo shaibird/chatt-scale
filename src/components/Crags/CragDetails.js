@@ -117,7 +117,9 @@ console.log(cragBoulders)
                 <div className="crag-description"><div className="details-header">Description:</div> {crags.description}</div>
                 <div className="crag-access"><div className="details-header">Access:</div>{crags.access}</div>
                 </div>
-            <GetWeather crags={crags}/>
+            
+            {/* <GetWeather crags={crags}/> */}
+
             <div className="boulder-panel">
             {
                 cragBoulders.map(

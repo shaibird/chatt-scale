@@ -26,7 +26,6 @@ export const CragList = ({ searchTermState }) => {
         [searchTermState]
     )
 
-        console.log(crags)
     return <article className="crags">
 
    <div className = "crag-container">

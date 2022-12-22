@@ -41,15 +41,15 @@
       "lon": -85.21987,
       "state": "Tennessee",
       "country": "United-States",
-      "description": "",
+      "description": "Considered on of the best boulderfields in the world, and for good reason. Highly concentrated crag with, what seems like, infinite possibilities. The bullet-proof sandstone attracts climbers from around the world.",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": "Owned and operated by the Montlake Golf Club, climbing has recently been protected in full with the club being purchased by climbers. woo! There is a $9 day fee that can be paid at the clubhouse. Crash pads can be rented for $10 a day"
     },
     {
       "id": 2,
       "cragName": "Dogwood",
-      "city":"Graysville",
+      "city": "Graysville",
       "lat": 35.498646,
       "lon": -85.081101,
       "state": "Tennessee",
@@ -57,12 +57,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 3,
       "cragName": "Apartment Boulders",
-      "city":"Chattanooga",
+      "city": "Chattanooga",
       "lat": 35.119645,
       "lon": -85.319962,
       "state": "Tennessee",
@@ -70,12 +70,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 4,
       "cragName": "Upper Middle Creek",
-      "city":"Chattanooga",
+      "city": "Chattanooga",
       "lat": 35.147895,
       "lon": -85.352076,
       "state": "Tennessee",
@@ -83,12 +83,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 5,
       "cragName": "Conner Creek",
-      "city":"Signal Mountain",
+      "city": "Signal Mountain",
       "lat": 35.165989,
       "lon": -85.379355,
       "state": "Tennessee",
@@ -96,12 +96,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 6,
       "cragName": "Laurel Snow Pocket Wilderness",
-      "city":"Dayton",
+      "city": "Dayton",
       "lat": 35.528425,
       "lon": -85.022223,
       "state": "Tennessee",
@@ -109,12 +109,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 7,
       "cragName": "Cumberland Boulders",
-      "city":"Soddy-Daisy",
+      "city": "Soddy-Daisy",
       "lat": 35.26351,
       "lon": -85.189802,
       "state": "Tennessee",
@@ -122,12 +122,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 8,
       "cragName": "Suck Creek",
-      "city":"Chattanooga",
+      "city": "Chattanooga",
       "lat": 35.145568,
       "lon": -85.388239,
       "state": "Tennessee",
@@ -135,25 +135,25 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 9,
       "cragName": "Lower Middle Creek",
       "lat": 35.122742,
       "lon": -85.3725,
-      "city":"Chattanooga",
+      "city": "Chattanooga",
       "state": "Tennessee",
       "country": "United-States",
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 10,
       "cragName": "Hell's Kitchen",
-      "city":"Graysville",
+      "city": "Graysville",
       "lat": 35.475767,
       "lon": -85.107419,
       "state": "Tennessee",
@@ -161,12 +161,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 11,
       "cragName": "Zahnd",
-      "city":"Menlo",
+      "city": "Menlo",
       "lat": 34.652713,
       "lon": -85.472353,
       "state": "Georgia",
@@ -174,12 +174,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 12,
       "cragName": "Morgan Creek",
-      "city":"Dayton",
+      "city": "Dayton",
       "lat": 35.538501,
       "lon": -85.037523,
       "state": "Tennessee",
@@ -187,12 +187,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 13,
       "cragName": "Caney Fork",
-      "city":"Sparta",
+      "city": "Sparta",
       "lat": 35.845558,
       "lon": -85.250274,
       "state": "Tennessee",
@@ -200,12 +200,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 14,
       "cragName": "Rocktown",
-      "city":"Lafayette",
+      "city": "Lafayette",
       "lat": 34.658958,
       "lon": -85.389721,
       "state": "Tennessee",
@@ -213,12 +213,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access"
+      "access":""
     },
     {
       "id": 15,
       "cragName": "The Obed",
-      "city":"Lancing",
+      "city": "Lancing",
       "lat": 36.103276,
       "lon": -84.713592,
       "state": "Tennessee",
@@ -226,12 +226,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 16,
       "cragName": "Horse Pens 40",
-      "city":"Steele",
+      "city": "Steele",
       "lat": 33.923137,
       "lon": -86.307194,
       "state": "Alabama",
@@ -239,12 +239,12 @@
       "description": "Highly concentrated boulderfield with incredible rock quality. Home of notable climbs like 'BumBoys' and 'God Module'",
       "img": "",
       "exposure": "",
-      "access":"Privately owned boulderfield. Pay at the shop at the parking lot. No dogs allowed"
+      "access": "Privately owned boulderfield. Pay at the shop at the parking lot. No dogs allowed"
     },
     {
       "id": 17,
       "cragName": "Hospital Boulders",
-      "city":"Gadsden",
+      "city": "Gadsden",
       "lat": 34.076257,
       "lon": -86.018652,
       "state": "Alabama",
@@ -252,12 +252,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":"SCC owned, a gate code is required for access. Gate code can be found on the SCC website."
+      "access": "SCC owned, a gate code is required for access. Gate code can be found on the SCC website."
     },
     {
       "id": 18,
       "cragName": "Rumbling Bald",
-      "city":"Lake Lure",
+      "city": "Lake Lure",
       "lat": 35.448934,
       "lon": 82.217037,
       "state": "North Carolina",
@@ -265,12 +265,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 19,
       "cragName": "Moores Wall",
-      "city":"Winston-Salem",
+      "city": "Winston-Salem",
       "lat": 36.399441,
       "lon": 80.290565,
       "state": "North Carolina",
@@ -278,12 +278,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 20,
       "cragName": "Linville Gorge",
-      "city":"Linville",
+      "city": "Linville",
       "lat": 35.904931,
       "lon": 81.895244,
       "state": "North Carolina",
@@ -291,12 +291,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 21,
       "cragName": "Grayson Highlands",
-      "city":"Mouth of Wilson",
+      "city": "Mouth of Wilson",
       "lat": 36.625068,
       "lon": 81.498931,
       "state": "Virginia",
@@ -304,7 +304,7 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 22,
@@ -317,12 +317,12 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     },
     {
       "id": 23,
       "cragName": "Fontainebleau",
-      "city":"",
+      "city": "",
       "lat": 48.392466,
       "lon": 2.559068,
       "state": "",
@@ -330,7 +330,7 @@
       "description": "",
       "img": "",
       "exposure": "",
-      "access":""
+      "access": ""
     }
   ],
   "boulders": [
