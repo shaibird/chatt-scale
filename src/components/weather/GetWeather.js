@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 export const GetWeather = ({ crags }) => {
-    const [cragWeather, setCragWeather] = useState({})
+    const [cragWeather, setCragWeather] = useState([])
     const api_key = "725b7899469aa9a7c3fdb66722cc4b3a"
 
     console.log(crags.lat)
@@ -21,18 +21,18 @@ export const GetWeather = ({ crags }) => {
     useEffect(
         () => {
             if (crags.lat) {FetchTheWeather()}
-            else { console.log("I say nay!") }
+            else { console.log("I say nay!")}
         },
         [crags]
     )
 
-    console.log(cragWeather)
+    console.log(cragWeather.daily[1].weather[0].description)
 
-    return <>
-        <article className="weather-data-display">
-            {JSON.stringify(cragWeather.daily[1].weather[0].description)}
-        </article>
-    </>
+    // return <>
+    //     <article className="weather-data-display">
+    //         {JSON.stringify(cragWeather.daily[1].weather[0].description)}
+    //     </article>
+    // </>
 
 
 

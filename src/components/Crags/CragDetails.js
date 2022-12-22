@@ -118,7 +118,7 @@ console.log(cragBoulders)
                 <div className="crag-access"><div className="details-header">Access:</div>{crags.access}</div>
                 </div>
             
-            {/* <GetWeather crags={crags}/> */}
+            <GetWeather crags={crags}/>
 
             <div className="boulder-panel">
             {
