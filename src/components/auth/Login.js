@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+import myLogo from "./scalelogo.svg"
 
 export const Login = () => {
     const [email, set] = useState("")
@@ -20,7 +21,7 @@ export const Login = () => {
                         id: user.id
                     }))
 
-                    navigate("/explore")
+                    navigate("/profile")
                 }
                 else {
                     window.alert("Invalid login")
@@ -30,9 +31,9 @@ export const Login = () => {
 
     return (
         <main className="container--login">
-            <section>
+            <section><img className="nav-logo" src={myLogo} alt={"Chatt.Scale Logo"} />
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Scale.Chatt</h1>
+                
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>

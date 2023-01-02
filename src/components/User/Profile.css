@@ -1,105 +1,227 @@
-
-
 body {
-	line-height: 1;
-    font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
 }
 
 .right-panel {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px 25px;
-    width: 100%;
-    max-width: 200px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border: 2px solid #3c6e71;
-    margin-right: 15px;
-}
-
-.panel {
   background-color: white;
   border-radius: 10px;
   padding: 15px 25px;
   width: 100%;
-  max-width: 900px;
+  max-width: 200px;
   display: flex;
   text-align: center;
   justify-content: center;
   border: 2px solid #3c6e71;
+  margin-right: 15px;
+}
+
+.navbar-container img {
+  height: 100px;
+  width: 310px;
+  align-self: center;
+}
+.panel {
+  display: flex;
+  flex-direction: row;
+}
+.userSendList {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  border: 2px solid #3c6e71;
+  justify-content: center;
+}
+
+.userTickList {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #3c6e71;
+  text-align: left;
+  flex-direction: column;
+  margin-left: 30px;
 }
 
 .profile {
-    text-align:center;
+  text-align: center;
 }
+
 .piece {
-  text-align:left;
+  text-align: left;
 }
+
 .panel-features {
-  display:flex;
-  flex-direction:column;
-  justify-content: left;
-  text-align:left,
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
 }
 
-.profile-panel {
-    border-left: 2px solid #3c6e71
-}
 
-.profile-panel:first-child {
-    border-left: none;
-}
 
 .center-panel {
-    display:flex;
-    justify-content: center;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
+
 .profile h2 {
-  color:#3c6e71;
+  color: #3c6e71;
   font-weight: 600;
   font-size: 25px;
   letter-spacing: 1px;
   margin-bottom: 25px;
+}
+.ascents-clock {
+  justify-content: left;
 }
 
 .profile-header {
-  color:#3c6e71;
+  color: #3c6e71;
   font-weight: 600;
   font-size: 25px;
   letter-spacing: 1px;
   margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel-features {
   margin: 50px 0 25px;
   color: #353535;
   font-weight: 500;
-  text-align: center
+  text-align: center;
+  justify-content: center;
+}
+
+.profile-title {
+  color: #3c6e71;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel-button {
   border: 1px solid #9dd1ff;
   border-radius: 10px;
-  color: #3c6e71;
+  color: white;
   display: inline-block;
   padding: 10px 25px;
   text-decoration: none;
   margin: 25px 0;
+  margin-left: 35px;
   transition: background-color 200ms ease-in-out;
   text-align: center;
-}
-.send_delete {
-    border: 1px solid #9dd1ff;
-}
-.panel-button:hover, .pricing-button:focus {
-  background-color: #3c6e71;;
+  width: 150px;
+  justify-content: center;
 }
 
-@media (min-width: 900px){
+.send_delete {
+  border: 1px solid #9dd1ff;
+}
+
+.panel-button:hover,
+.pricing-button:focus {
+  background-color: #3c6e71;
+  ;
+}
+
+@media (min-width: 900px) {
   .panel {
     flex-direction: row;
   }
 
+}
+
+.edit-button {
+  margin-left: 10px
+}
+
+
+.profile-header {
+  text-align: center;
+}
+
+.tick {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 10px
+}
+
+.edit-button {
+  width: 50px;
+  background-color: white;
+  color: #353535;
+  border: 1px solid #353535;
+  justify-content: right;
+  margin-left: 150px
+}
+
+.tick_delete {
+  width: 50px;
+  background-color: white;
+  color: #353535;
+  border: 1px solid #353535;
+  margin-left: 20px;
+}
+
+.log {
+  width: 60px;
+  background-color: white;
+  color: #353535;
+  border: 1px solid #353535;
+  margin-left: 170px;
+}
+
+.Name {
+  font-weight: 700;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px
+}
+
+.secondSend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px
+}
+
+.description {
+  margin-left: 20px;
+}
+
+.grade {
+  font-weight: 600;
+  padding-top: 10px
+}
+
+.sends {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 10px;
+  justify-content: left;
 }

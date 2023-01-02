@@ -4,9 +4,10 @@ import { useEffect, useState } from "react"
 import { UserSendForm } from './UserSendForm'
 import { useNavigate } from 'react-router-dom'
 import { ConfirmationOfTick } from './ConfirmationOfTick'
-import { GetWeather } from '../weather/GetWeather'
 import { CragForecast } from '../weather/CragForecast'
 import "./CragDetails.css"
+import { CurrentWeather } from '../weather/CurrentWeather'
+import { GetWeather } from '../weather/GetWeather'
 
 
 export const CragDetails = () => {
@@ -18,11 +19,21 @@ export const CragDetails = () => {
     const [modal, setModal] = useState(false)
     const [filteredBoulders, setFilteredBoulders] = useState([])
     const [tickModal, setTickModal] = useState(false)
-
+    const [latitude, setLatitude] = useState()
+    const [longitude, setLongitude] = useState()
+    const [image, setImage] = useState()
+   
     const localScaleUser = localStorage.getItem("scale_user")
     const scaleUserObject = JSON.parse(localScaleUser)
     
     const navigate = useNavigate()
+
+    // const imageUrl = require(`${crags.img}`)
+
+    // useEffect(() => {
+    //     setImage(imageUrl)
+    // },[crags]
+    // )
 
     const [userTick, setUserTick] = useState({})
 
@@ -75,7 +86,7 @@ export const CragDetails = () => {
             if (userTick.cragId) {handleSaveButtonClick()}
             else {console.log("whoops!")}
         },
-        [userTick]
+        [userTick.cragId]
     )
 
     useEffect(
@@ -96,8 +107,28 @@ export const CragDetails = () => {
             const matchedBoulders = boulders.filter(boulder => boulder.cragId === crags.id)
             setCragBoulders(matchedBoulders)
         },
-        [boulders]
+        [boulders, crags.id]
     )
+
+    const updateLat = (lat) => {
+        setLatitude(lat)
+
+    }
+    const updateLon = (lon) => {
+        setLongitude(lon)
+    }
+    useEffect(
+        () => {
+           updateLat(crags.lat)
+        }
+    )
+
+    useEffect(
+        () => {
+           updateLon(crags.lon)
+        }
+    )
+
 
 
     const toggleModal = () => {
@@ -108,36 +139,45 @@ export const CragDetails = () => {
         setTickModal(!modal)
     }
 
-console.log(cragBoulders)
+
+
     return <>
         <article className="boulders" >
             <div className="boulderfield-details">
                 <header className="CragName">{crags.cragName}</header>
                 <div className="location">{crags.city}, {crags.state}</div>
-                <div className="crag-description"><div className="details-header">Description:</div> {crags.description}</div>
+                {/* <img src={image} alt="boulder"
+
+              className="item-img"
+            /> */}
+                <div className="crag-description"><div className="details-header">Popular Climbs: </div> {crags.description}</div>
                 <div className="crag-access"><div className="details-header">Access:</div>{crags.access}</div>
                 </div>
-            
-            <GetWeather crags={crags}/>
+            <div className="right-page">
+            <GetWeather latitude={latitude} longitude={longitude}/>
 
             <div className="boulder-panel">
             {
                 cragBoulders.map(
                     (boulder) => {
                         return <section className="boulder" key={`boulder--${boulder.id}`} id={`${boulder.id}`}>
-                            <div className="Grade">{boulder.boulderGrade.boulderGrade}</div>
                             <div className="Name">{boulder.boulderName}</div>
+                            <div className="second-line">
+                            <div className="Grade">{boulder.boulderGrade.boulderGrade}</div>
+                            
+                            <div className="description">{boulder.description}</div>
                             <div className="buttons"><button className="details-tick" onClick={() => {
                                 setUserTick(boulder)
                                 toggleTickModal()
                                 }}>Add to Tick List</button> <button className="details-send" onClick={() => {
                                 setFilteredBoulders(boulder);
                                 toggleModal()
-                            }}>Log Send</button></div>
+                            }}>Log Send</button></div></div>
                         </section>
                     }
                 )
             }
+            </div>
             </div>
         </article>
 

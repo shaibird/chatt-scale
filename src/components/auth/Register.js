@@ -2,6 +2,7 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+import myLogo from "./scalelogo.svg"
 
 export const Register = (props) => {
     const [user, setUser] = useState({
@@ -56,8 +57,10 @@ export const Register = (props) => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
+        <main className="containers" style={{ textAlign: "center" }}>
+            <img className="nav-logo" src={myLogo} alt={"Chatt.Scale Logo"} />
             <form className="form--login" onSubmit={handleRegister}>
+            
                 <h1 className="h3 mb-3 font-weight-normal">Register for Scale.Chatt</h1>
                 <fieldset>
                     <label htmlFor="fullName"> Full Name </label>

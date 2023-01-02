@@ -3,6 +3,7 @@ import { EditProfileForm } from './EditProfileForm'
 import { ProfileDetails } from './ProfileDetails'
 import { UserSendList } from './UserSendList'
 import { UserTickList } from './UserTickList'
+import { Chart } from '../Chart/Chart'
 import "./Profile.css"
 import "@fontsource/open-sans";
 
@@ -11,6 +12,7 @@ import "@fontsource/open-sans";
 export const Profile = () => {
     const [userSends, setUserSends] = useState([])
     const [userProfile, setUserProfile] = useState([])
+    const [filtered, setFiltered] = useState([])
 
     const localScaleUser = localStorage.getItem("scale_user")
     const scaleUserObject = JSON.parse(localScaleUser)
@@ -34,15 +36,22 @@ export const Profile = () => {
 }
 
     
-
+useEffect(
+    () => {
+        const mySends = userSends.filter(send => send.userId === scaleUserObject.id)
+        setFiltered(mySends)
+    }, [userSends]
+)
+console.log(filtered)
 
     return <article className="center-panel">
         <section className="right-panel">
         <ProfileDetails  userProfile={userProfile} setUserProfile={setUserProfile} getProfileDetails={getProfileDetails}/>
         </section>
+        {/* <Chart filtered={filtered} getSends={getAllSends}/> */}
     <section className = "panel">
-        
-            <UserSendList userSends={userSends} setUserSends={setUserSends} getSends={getAllSends}/>
+            
+            <UserSendList filtered={filtered} getSends={getAllSends}/>
             <UserTickList getSends={getAllSends}/>
             </section>
             </article>

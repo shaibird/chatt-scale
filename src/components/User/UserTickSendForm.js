@@ -73,7 +73,7 @@ export const UserTickSendForm = ({ setModal, filteredBoulders, getTicks, getSend
 
     return (
         <>
-            (
+            
             <form className="userSendForm">
                 <div className="modal">
                     <div className="overlay">

@@ -1,0 +1,77 @@
+.weekly_forecast {
+    display:flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid #3c6e71;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.weather-details{
+    text-align:left;
+    margin: 3px;
+    align-self: flex-end;
+    transform: translateY(5%);
+    display: inline-block;
+    width:80%;
+}
+
+.date {
+    padding-top: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.description {
+    padding-top: 10px;
+}
+
+.temp_low {
+    padding-top: 5px;
+}
+
+.temp_high {
+    padding-top: 5px;
+}
+
+.humidity {
+    padding-top: 5px;
+}
+
+.wind {
+    padding-top: 5px;
+}
+
+.weather-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.weather-icon {
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+.today {
+    flex-direction: column;
+    max-width: 400;
+    margin-right: 10px;
+    justify-content: left;
+}
+
+.tomorrow {
+    flex-direction: column;
+    padding-right:10px;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+}

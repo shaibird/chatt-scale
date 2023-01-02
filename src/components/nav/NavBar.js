@@ -15,7 +15,7 @@ export const NavBar = () => {
             </nav>
             <img className="nav-logo" src={myLogo} alt={"Chatt.Scale Logo"} />
             <nav className="nav-left">
-                <Link className="nav-left" to="/home">Home</Link>
+                {/* <Link className="nav-left" to="/home">Home</Link> */}
 
 
                 {

@@ -1,44 +1,35 @@
-import { useEffect, useState } from "react"
+import { render } from "@testing-library/react";
+import { useEffect, useState, Component } from "react"
+import { CragForecast } from "./CragForecast"
+import { CurrentWeather } from "./CurrentWeather";
+// ({ crags })
 
-export const GetWeather = ({ crags }) => {
-    const [cragWeather, setCragWeather] = useState([])
-  
+import axios from 'axios';
 
-    console.log(crags.lat)
-    console.log(crags.lon)
+export const GetWeather = (props) => {
+  const [forecast, setForecast] = useState(null);
 
-    const FetchTheWeather = () => {
-    
-                 fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${crags.lat}&lon=${crags.lon}&units=imperial&appid=${api_key}`)
-                    .then(response => response.json())
-                    .then((data) => {
-                        setCragWeather(data)
-                    })
+  const api_key = "725b7899469aa9a7c3fdb66722cc4b3a"
 
+  useEffect(() => {
+    async function getForecast() {
+      const { data } = await axios.get(
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${props.latitude}&lon=${props.longitude}&units=imperial&appid=${api_key}`
+      );
+      setForecast(data);
     }
+    getForecast();
+  }, [props.latitude, props.longitude]);
+
+  if (!forecast) {
+    return <div>Loading forecast...</div>;
+  }
 
 
-    useEffect(
-        () => {
-            if (crags.lat) {FetchTheWeather()}
-            else { console.log("I say nay!")}
-        },
-        [crags]
-    )
-
-    console.log(cragWeather.daily[1].weather[0].description)
-
-    // return <>
-    //     <article className="weather-data-display">
-    //         {JSON.stringify(cragWeather.daily[1].weather[0].description)}
-    //     </article>
-    // </>
-
-
-
-
-
-    //find icons and use a .find where if the descripton of the weather === the name of the weather value in a dictionary that I create. 
-    //then display the image that is in the database.
-
+  return (
+    <div className="Weather-forecast">
+    {/* <CurrentWeather forecast={forecast} /> */}
+    <CragForecast forecast={forecast} />
+    </div>
+  );
 }

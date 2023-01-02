@@ -18,7 +18,7 @@
 
 .boulder {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     justify-content: space-between;
     border-bottom: 2px solid lightgray;
@@ -49,6 +49,7 @@
     margin: 15px 0;
     transition: background-color 200ms ease-in-out;
     justify-content: right;
+    font-size: 12px;
   }
   .details-tick:hover, .pricing-button:focus {
     background-color: #3c6e71;;
@@ -63,6 +64,8 @@
     text-decoration: none;
     margin: 15px 0;
     transition: background-color 200ms ease-in-out;
+    font-size: 12px;
+    margin-left:5px;
   }
   .details-send:hover, .pricing-button:focus {
     background-color: #3c6e71;;
@@ -88,10 +91,14 @@
     border-bottom: 2px solid lightgray;
     padding-bottom: 10px;
   }
-
+.Name {
+  font-size:20px;
+  margin-top: 10px;
+}
   .location {
     padding-top: 10px;
     text-align: center;
+    font-weight: 500;
   }
 
   .crag-description {
@@ -109,3 +116,32 @@
   .details-header {
     font-weight:bold;
   }
+  .label {
+    font-weight: 500;
+  }
+
+.item-img {
+  padding-top: 10px;
+  max-width:60%;
+  height:auto;
+  align-self: center;
+}
+
+.second-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description {
+  align-self: center;
+}
+
+.Grade {
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}

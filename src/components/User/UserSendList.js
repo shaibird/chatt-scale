@@ -6,9 +6,8 @@ import { UserSendEdits } from "./UserSendEdit"
 import './Profile.css'
 
 
-export const UserSendList = ({ userSends, getSends }) => {
+export const UserSendList = ({ getSends, filtered }) => {
     const [allBoulders, setAllBoulders] = useState([])
-    const [filtered, setFiltered] = useState([])
     const [modal, setModal] = useState(false)
     const [filteredSend, setFilteredSend] = useState([])
 
@@ -34,33 +33,32 @@ export const UserSendList = ({ userSends, getSends }) => {
         []
     )
 
-    useEffect(
-        () => {
-            const mySends = userSends.filter(send => send.userId === scaleUserObject.id)
-            setFiltered(mySends)
-        }, [userSends]
-    )
     const toggleModal = () => {
         setModal(!modal)
     }
 
+    console.log(filtered)
 // matching the ids in the send list, to the actual boulder so we can display the boulder information
 // not getting all of the boulders in the list. It's stopping after the first match. 
 
 return <>
     <div className="profile-panel">
         <article className="userSendList" >
-            <header className="profile-header">Ascents</header>
-            <div className="panel-features">
+            <header className="profile-title">Ascents</header>
+            <div className="ascents-block">
                 {filtered.map(
                     (send) => {
                         return <section className="ascents" key={`ascent--${send.id}`} id={`${send.id}`}>
-                            <header>
-                                {send.boulder.boulderName}  Perceived Grade: {send.boulderGrade.boulderGrade} Comment: {send.comment}</header>
+                            <header className="sends">
+                                <div className="details">
+                                <div className="Name">{send.boulder.boulderName}</div> 
+                                <div className="secondSend"><div className="grade"> {send.boulderGrade.boulderGrade}</div> <div className="description">Comment: {send.comment}</div>
                                 <button className="edit-button" onClick={() => {
                                 setFilteredSend(send);
                                 toggleModal()
-                                }}>Edit</button>
+                                }}>Edit</button></div>
+                                </div>
+                                </header>
                         </section>
 
                     }
