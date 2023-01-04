@@ -21,6 +21,16 @@ export const ProfileDetails = ({ userProfile, setUserProfile, getProfileDetails 
         setModal(!modal)
     }
 
+// useEffect(
+//     () => {
+// )
+//     const cmToFtIn = () => {
+//         const inches = {userProfile.height} / 2.54;
+//         const feet = Math.floor(inches / 12);
+//         inches %= 12;
+//         return `${feet}ft ${inches}in`;
+//       }
+
     return <>
         <div className="profile-panel">
 
@@ -31,8 +41,8 @@ export const ProfileDetails = ({ userProfile, setUserProfile, getProfileDetails 
                         <ul>Name: {userProfile.fullName}</ul>
                         <ul>Email: {userProfile.email}</ul>
                         <ul>Birthday: {userProfile.birthDate}</ul>
-                        <ul>Height: {userProfile.height}</ul>
-                        <ul>Ape Index: {userProfile.apeIndex}</ul>
+                        <ul>Height: {userProfile.height}cm</ul>
+                        <ul>Ape Index: {userProfile.apeIndex}in</ul>
                     </div>
                     <button className="panel-button" onClick={() => { toggleModal() }}>Edit Profile</button>
                 </div>

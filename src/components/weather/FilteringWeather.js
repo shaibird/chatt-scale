@@ -40,6 +40,8 @@ export const getWeatherIcon = (description) => {
         return <WiCloud size={50} color="#3c6e71" />;
       } else if (description === 'very heavy rain') {
         return <WiRain size={50} color="#3c6e71" />;
+      } else if (description === 'extreme rain') {
+        return <WiRain size={50} color="#3c6e71" />;
       }
   }
 

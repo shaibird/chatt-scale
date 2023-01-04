@@ -2,39 +2,33 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from "react"
 import { UserSendForm } from './UserSendForm'
-import { useNavigate } from 'react-router-dom'
 import { ConfirmationOfTick } from './ConfirmationOfTick'
-import { CragForecast } from '../weather/CragForecast'
 import "./CragDetails.css"
-import { CurrentWeather } from '../weather/CurrentWeather'
 import { GetWeather } from '../weather/GetWeather'
 
 
 export const CragDetails = () => {
     const { cragId } = useParams()
-    const [crags, updateCrag] = useState([])
+    const [crags, updateCrag] = useState({})
     const [boulders, setBoulders] = useState([])
     const [cragBoulders, setCragBoulders] = useState([])
-    const [boulderGrades, setBoulderGrades] = useState([])
     const [modal, setModal] = useState(false)
     const [filteredBoulders, setFilteredBoulders] = useState([])
     const [tickModal, setTickModal] = useState(false)
     const [latitude, setLatitude] = useState()
     const [longitude, setLongitude] = useState()
-    const [image, setImage] = useState()
+    const [image, setImage] = useState(null)
    
     const localScaleUser = localStorage.getItem("scale_user")
     const scaleUserObject = JSON.parse(localScaleUser)
     
-    const navigate = useNavigate()
-
-    // const imageUrl = require(`${crags.img}`)
 
     // useEffect(() => {
-    //     setImage(imageUrl)
-    // },[crags]
-    // )
+    //   const imageUrl = require(`${crags.img}`);
 
+    //   setImage(imageUrl);
+    // }, [crags]);
+  
     const [userTick, setUserTick] = useState({})
 
     const handleSaveButtonClick = (click) => {
@@ -140,16 +134,16 @@ export const CragDetails = () => {
     }
 
 
-
+console.log(cragBoulders)
     return <>
         <article className="boulders" >
             <div className="boulderfield-details">
                 <header className="CragName">{crags.cragName}</header>
                 <div className="location">{crags.city}, {crags.state}</div>
-                {/* <img src={image} alt="boulder"
-
-              className="item-img"
-            /> */}
+                <img
+              src={crags.img}
+              alt={"crag boulder"}
+              className="item-img"/>
                 <div className="crag-description"><div className="details-header">Popular Climbs: </div> {crags.description}</div>
                 <div className="crag-access"><div className="details-header">Access:</div>{crags.access}</div>
                 </div>
@@ -162,10 +156,11 @@ export const CragDetails = () => {
                     (boulder) => {
                         return <section className="boulder" key={`boulder--${boulder.id}`} id={`${boulder.id}`}>
                             <div className="Name">{boulder.boulderName}</div>
+                            <div className="style">{boulder.boulderHoldType.type}</div>
                             <div className="second-line">
-                            <div className="Grade">{boulder.boulderGrade.boulderGrade}</div>
+                            <div className="left"><div className="Grade">{boulder.boulderGrade.boulderGrade}</div>
                             
-                            <div className="description">{boulder.description}</div>
+                            <div className="description">{boulder.description} </div></div>
                             <div className="buttons"><button className="details-tick" onClick={() => {
                                 setUserTick(boulder)
                                 toggleTickModal()

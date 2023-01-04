@@ -100,12 +100,12 @@ export const UserSendEdits = ({ setModal, send, getSends }) => {
                                     } />
                             </div>
                         </fieldset>
-                        <button className=".close-modal" type="button" onClick={(e) => setModal(false)}>Cancel</button>
+                        <div className="edit-buttons"><button className=".close-modal" type="button" onClick={(e) => setModal(false)}>Cancel</button>
                         <button
                             onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
                             className=".close-modal">
                             Save Send
-                        </button>
+                        </button></div>
                     </div>
                 </div>
             </div>

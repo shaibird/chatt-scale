@@ -43,7 +43,7 @@ export const UserTickList = ({getSends}) => {
         setModal(!modal)
     }
 
-
+console.log(filtered)
     return <>
     <div className="profile-panel">
         <article className="userTickList" >
@@ -52,11 +52,12 @@ export const UserTickList = ({getSends}) => {
                 (tick) => {
                     return <section className="TickList" key={`Tick--${tick.id}`} id={`${tick.id}`}>
                         <header className="tick">
-                            <div className="details"><div className="Name"> {tick.boulder.boulderName}</div>  
-                            <div className="second"><div className="grade">{tick.boulderGrade.boulderGrade}</div> <div className="description">{tick.boulderHoldType.type} </div><button className="log" onClick={() => {
+                            <div className="details"><div className="Name"> {tick.boulder.boulderName}</div>
+                            <div className="boulder-crag">{tick.crag.cragName}</div>  
+                            <div className="second"><div className="grade">{tick.boulderGrade.boulderGrade}</div><div className="description">{tick.boulderHoldType.type} </div> <div className="tick-buttons"><button className="log" onClick={() => {
                                 setFilteredBoulders(tick);
                                 toggleModal()
-                            }}>Log Ascent</button><UserTickDelete tick={tick} getTicks={getAllTicks} /></div></div>
+                            }}>Log Ascent</button><UserTickDelete tick={tick} getTicks={getAllTicks} /></div></div></div>
                         </header>
                     </section>
 

@@ -24,7 +24,6 @@
 }
 
 .date {
-    padding-top: 10px;
     font-weight: 600;
     text-align: center;
 }
@@ -74,4 +73,8 @@
 .loading {
     display: flex;
     justify-content: center;
+}
+
+.forecast {
+    line-height: 1.5;
 }

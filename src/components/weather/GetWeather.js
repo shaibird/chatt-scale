@@ -1,15 +1,13 @@
-import { render } from "@testing-library/react";
 import { useEffect, useState, Component } from "react"
 import { CragForecast } from "./CragForecast"
-import { CurrentWeather } from "./CurrentWeather";
-// ({ crags })
+
 
 import axios from 'axios';
 
 export const GetWeather = (props) => {
   const [forecast, setForecast] = useState(null);
 
-  
+  const api_key = "725b7899469aa9a7c3fdb66722cc4b3a"
 
   useEffect(() => {
     async function getForecast() {
@@ -28,7 +26,6 @@ export const GetWeather = (props) => {
 
   return (
     <div className="Weather-forecast">
-    {/* <CurrentWeather forecast={forecast} /> */}
     <CragForecast forecast={forecast} />
     </div>
   );

@@ -3,7 +3,7 @@ import { EditProfileForm } from './EditProfileForm'
 import { ProfileDetails } from './ProfileDetails'
 import { UserSendList } from './UserSendList'
 import { UserTickList } from './UserTickList'
-import { Chart } from '../Chart/Chart'
+import { UserChart } from './UserChart'
 import "./Profile.css"
 import "@fontsource/open-sans";
 
@@ -48,11 +48,13 @@ console.log(filtered)
         <section className="right-panel">
         <ProfileDetails  userProfile={userProfile} setUserProfile={setUserProfile} getProfileDetails={getProfileDetails}/>
         </section>
-        {/* <Chart filtered={filtered} getSends={getAllSends}/> */}
+        <section className="right-side">
+        <UserChart filtered={filtered} getSends={getAllSends}/>
     <section className = "panel">
-            
+        
             <UserSendList filtered={filtered} getSends={getAllSends}/>
             <UserTickList getSends={getAllSends}/>
+            </section>
             </section>
             </article>
 }

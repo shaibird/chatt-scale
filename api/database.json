@@ -7,7 +7,7 @@
       "apeIndex": -4,
       "birthDate": "1993-07-21",
       "height": 175.25,
-      "userName": "BirdyBird"
+      "userName": "Shayheyheyy"
     },
     {
       "email": "test@test.com",
@@ -30,6 +30,14 @@
       "apeIndex": -4,
       "height": 175,
       "id": 4
+    },
+    {
+      "email": "Nana@banana.com",
+      "fullName": "Nana Bread",
+      "userName": "Testdummy",
+      "apeIndex": 0,
+      "height": 0,
+      "id": 5
     }
   ],
   "crags": [
@@ -42,9 +50,9 @@
       "state": "Tennessee",
       "country": "United-States",
       "description": "Super Mario, Deception, The Shield",
-      "img": "./Stone-Fort.png",
+      "img": "../../images/Stone-Fort.png",
       "exposure": "",
-      "access": "Owned and operated by the Montlake Golf Club, climbing has recently been protected in full with the club being purchased by climbers. woo! There is a $9 day fee that can be paid at the clubhouse. Crash pads can be rented for $10 a day"
+      "access": "Owned and operated by the Montlake Golf Club, the property has been recently purchased by climbers, protecting the boulders and climbing. There is a $9 day fee that can be paid at the clubhouse. Crash pads can be rented for $10 a day. For more information, visit www.stoneforttn.com"
     },
     {
       "id": 2,
@@ -55,9 +63,9 @@
       "state": "Tennessee",
       "country": "United-States",
       "description": "Michelin Man, El Cubano",
-      "img": "",
+      "img": "../../images/dogwood.jpeg",
       "exposure": "",
-      "access": ""
+      "access": "There are two different access points for Dogwood, east and west. Dogwood East is privately owned, but access to climbing is protected. A $5 fee is required for climbing, camping is available on site for $30 a night. Dogwood West is owned by the SCC, primarily a sport climbing crag, there are a couple of notable boulders that sit within this area. "
     },
     {
       "id": 3,
@@ -120,9 +128,9 @@
       "state": "Tennessee",
       "country": "United-States",
       "description": "Power Prow, 7-11 Roof,Texas Toast",
-      "img": "",
+      "img": "../../images/cumberland.jpeg",
       "exposure": "",
-      "access": ""
+      "access": "Also known as Pep Boys, the Cumberland boulders can be accessed by a half mile from the Mowbray Pike Trailhead of the Cumberland trail. Boulders will be in an obvious cluster. Please brush your ticks!"
     },
     {
       "id": 8,
@@ -211,7 +219,7 @@
       "state": "Tennessee",
       "country": "United-States",
       "description": "Nose Candy, Golden Showers, The Orb",
-      "img": "",
+      "img": "../../images/rocktown.jpeg",
       "exposure": "",
       "access": ""
     },
@@ -349,7 +357,7 @@
       "id": 25,
       "cragName": "Ochs Hwy",
       "city": "Lookout",
-      "lat": 34.986879, 
+      "lat": 34.986879,
       "lon": -85.344599,
       "state": "Tennessee",
       "country": "United-States",
@@ -362,7 +370,7 @@
       "id": 26,
       "cragName": "Holy Boulders",
       "city": "Alto Pass",
-      "lat": 37.619151,  
+      "lat": 37.619151,
       "lon": -89.418661,
       "state": "Illinois",
       "country": "United-States",
@@ -381,7 +389,7 @@
       "boulderGradeId": 9,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
-      "description":"After a sit start, small, slopey crimps get you up the difficulties with some creative footwork."
+      "description": "After a sit start, small, slopey crimps get you up the difficulties with some creative footwork."
     },
     {
       "id": 2,
@@ -401,7 +409,7 @@
       "boulderGradeId": 5,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 1,
-      "description":"Mantle over the 'Pancake'"
+      "description": "Mantle over the 'Pancake'"
     },
     {
       "id": 4,
@@ -421,7 +429,7 @@
       "boulderGradeId": 6,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
-      "description":"Fun line with crimps and fun moves"
+      "description": "Fun line with crimps and fun moves"
     },
     {
       "id": 6,
@@ -431,7 +439,7 @@
       "boulderGradeId": 6,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 1,
-      "description":""
+      "description": ""
     },
     {
       "id": 7,
@@ -441,7 +449,7 @@
       "boulderGradeId": 7,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
-      "description":""
+      "description": ""
     },
     {
       "id": 8,
@@ -451,7 +459,7 @@
       "boulderGradeId": 9,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 1,
-      "description":"Climb the arete with cool slopey features"
+      "description": "Climb the arete with cool slopey features"
     },
     {
       "id": 9,
@@ -461,7 +469,7 @@
       "boulderGradeId": 8,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 1,
-      "description":""
+      "description": ""
     },
     {
       "id": 10,
@@ -471,7 +479,7 @@
       "boulderGradeId": 8,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 4,
-      "description":"Traverse low on good holds, power move to slabby top out"
+      "description": "Traverse low on good holds, power move to slabby top out"
     },
     {
       "id": 11,
@@ -481,7 +489,7 @@
       "boulderGradeId": 8,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":""
+      "description": ""
     },
     {
       "id": 12,
@@ -491,7 +499,7 @@
       "boulderGradeId": 7,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 4,
-      "description":"Start in the slot at the back of the cave. Work your way right to a jug rail and traverse that out to the lip. Move left and top out."
+      "description": "Start in the slot at the back of the cave. Work your way right to a jug rail and traverse that out to the lip. Move left and top out."
     },
     {
       "id": 13,
@@ -501,7 +509,7 @@
       "boulderGradeId": 8,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 4,
-      "description":"Fun roof climbing leads to the mantle crux."
+      "description": "Fun roof climbing leads to the mantle crux."
     },
     {
       "id": 14,
@@ -511,7 +519,7 @@
       "boulderGradeId": 10,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
-      "description":""
+      "description": ""
     },
     {
       "id": 15,
@@ -521,7 +529,7 @@
       "boulderGradeId": 7,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Move through a series of pinches and crimpers to a large throw for the lip."
+      "description": "Move through a series of pinches and crimpers to a large throw for the lip."
     },
     {
       "id": 16,
@@ -531,7 +539,7 @@
       "boulderGradeId": 6,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
-      "description":"Crimp your way up and step off up and right"
+      "description": "Crimp your way up and step off up and right"
     },
     {
       "id": 17,
@@ -541,7 +549,7 @@
       "boulderGradeId": 7,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
-      "description":"Great rock with some awkward moves and difficult footwork"
+      "description": "Great rock with some awkward moves and difficult footwork"
     },
     {
       "id": 18,
@@ -551,7 +559,7 @@
       "boulderGradeId": 7,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 3,
-      "description":"A pretty little arete problem with 'bread loaf' features and a challenging sloper topout."
+      "description": "A pretty little arete problem with 'bread loaf' features and a challenging sloper topout."
     },
     {
       "id": 19,
@@ -561,7 +569,7 @@
       "boulderGradeId": 9,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 3,
-      "description":"Slap, squeeze and toss your way through the entire prow, topping out just left of the nose of the boulder."
+      "description": "Slap, squeeze and toss your way through the entire prow, topping out just left of the nose of the boulder."
     },
     {
       "id": 20,
@@ -571,17 +579,17 @@
       "boulderGradeId": 10,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Start on the inside of the cave on some pinchy jugs and make your way out on the crimps and edges to the flat lip and do a nice mantle."
+      "description": "Start on the inside of the cave on some pinchy jugs and make your way out on the crimps and edges to the flat lip and do a nice mantle."
     },
     {
       "id": 21,
       "boulderName": "7-11 Roof",
       "cragId": 7,
       "sectorId": "",
-      "boulderGradeId": 6,
+      "boulderGradeId": 8,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Start on crimps in the middle of the roof and move out left towards the river, topping out on the pancake shaped flakes."
+      "description": "Start on crimps in the middle of the roof and move out left towards the river, topping out on the pancake shaped flakes."
     },
     {
       "id": 22,
@@ -591,7 +599,7 @@
       "boulderGradeId": 9,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 3,
-      "description":"Compression, slopers, heel-hooks, and maybe a knee bar, if you're feeling it. Fun climbing on a beautiful face"
+      "description": "Compression, slopers, heel-hooks, and maybe a knee bar, if you're feeling it. Fun climbing on a beautiful face"
     },
     {
       "id": 23,
@@ -601,7 +609,7 @@
       "boulderGradeId": 10,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Steep climbing on decent holds with heel & toe hooks."
+      "description": "Steep climbing on decent holds with heel & toe hooks."
     },
     {
       "id": 24,
@@ -611,7 +619,7 @@
       "boulderGradeId": 7,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Start dangling on the obvious boulder floating between boulders."
+      "description": "Start dangling on the obvious boulder floating between boulders."
     },
     {
       "id": 25,
@@ -621,7 +629,7 @@
       "boulderGradeId": 10,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Crimps and lock-offs."
+      "description": "Crimps and lock-offs."
     },
     {
       "id": 26,
@@ -631,7 +639,7 @@
       "boulderGradeId": 9,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Fun climbing on crimps. Right line on Nine Lives boulder."
+      "description": "Fun climbing on crimps. Right line on Nine Lives boulder."
     },
     {
       "id": 27,
@@ -671,7 +679,7 @@
       "boulderGradeId": 11,
       "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
-      "description":"Start matched on a well-chalked third-pad crimp under the roof. Make a big move out left to a big edge, then move back right over the lip and onto the face above."
+      "description": "Start matched on a well-chalked third-pad crimp under the roof. Make a big move out left to a big edge, then move back right over the lip and onto the face above."
     },
     {
       "id": 31,
@@ -724,92 +732,92 @@
   "boulderGrades": [
     {
       "id": 1,
-      "boulderGrade": "v0",
+      "boulderGrade": "V0",
       "points": 0
     },
     {
       "id": 2,
-      "boulderGrade": "v1",
+      "boulderGrade": "V1",
       "points": 1
     },
     {
       "id": 3,
-      "boulderGrade": "v2",
+      "boulderGrade": "V2",
       "points": 2
     },
     {
       "id": 4,
-      "boulderGrade": "v3",
+      "boulderGrade": "V3",
       "points": 3
     },
     {
       "id": 5,
-      "boulderGrade": "v4",
+      "boulderGrade": "V4",
       "points": 4
     },
     {
       "id": 6,
-      "boulderGrade": "v5",
+      "boulderGrade": "V5",
       "points": 5
     },
     {
       "id": 7,
-      "boulderGrade": "v6",
+      "boulderGrade": "V6",
       "points": 6
     },
     {
       "id": 8,
-      "boulderGrade": "v7",
+      "boulderGrade": "V7",
       "points": 7
     },
     {
       "id": 9,
-      "boulderGrade": "v8",
+      "boulderGrade": "V8",
       "points": 8
     },
     {
       "id": 10,
-      "boulderGrade": "v9",
+      "boulderGrade": "V9",
       "points": 9
     },
     {
       "id": 11,
-      "boulderGrade": "v10",
+      "boulderGrade": "V10",
       "points": 10
     },
     {
       "id": 12,
-      "boulderGrade": "v11",
+      "boulderGrade": "V11",
       "points": 11
     },
     {
       "id": 13,
-      "boulderGrade": "v12",
+      "boulderGrade": "V12",
       "points": 12
     },
     {
       "id": 14,
-      "boulderGrade": "v13",
+      "boulderGrade": "V13",
       "points": 13
     },
     {
       "id": 15,
-      "boulderGrade": "v14",
+      "boulderGrade": "V14",
       "points": 14
     },
     {
       "id": 16,
-      "boulderGrade": "v15",
+      "boulderGrade": "V15",
       "points": 15
     },
     {
       "id": 17,
-      "boulderGrade": "v16",
+      "boulderGrade": "V16",
       "points": 16
     },
     {
       "id": 18,
-      "boulderGrade": "v17",
+      "boulderGrade": "V17",
       "points": 17
     }
   ],
@@ -830,19 +838,19 @@
   "boulderHoldTypes": [
     {
       "id": 1,
-      "type": "slopers"
+      "type": "Slopers"
     },
     {
       "id": 2,
-      "type": "crimps"
+      "type": "Crimps"
     },
     {
       "id": 3,
-      "type": "compression"
+      "type": "Compression"
     },
     {
       "id": 4,
-      "type": "jugs"
+      "type": "Jugs"
     }
   ],
   "cragExposures": [
@@ -892,15 +900,6 @@
       "id": 1
     },
     {
-      "boulderId": 5,
-      "comment": "test",
-      "sendDate": "2022-12-07",
-      "boulderRatingId": 5,
-      "boulderGradeId": 6,
-      "userId": 1,
-      "id": 5
-    },
-    {
       "boulderId": 13,
       "comment": "SOFFT",
       "sendDate": "2022-12-01",
@@ -919,24 +918,6 @@
       "id": 10
     },
     {
-      "boulderId": 4,
-      "comment": "fads",
-      "sendDate": "2022-12-14",
-      "boulderRatingId": 2,
-      "boulderGradeId": 4,
-      "userId": 1,
-      "id": 11
-    },
-    {
-      "boulderId": 3,
-      "comment": "mind blown",
-      "sendDate": "2022-12-21",
-      "boulderRatingId": 3,
-      "boulderGradeId": 10,
-      "userId": 1,
-      "id": 12
-    },
-    {
       "boulderId": 3,
       "comment": "so good",
       "sendDate": "2022-12-21",
@@ -944,6 +925,69 @@
       "boulderGradeId": 5,
       "userId": 4,
       "id": 14
+    },
+    {
+      "boulderId": 24,
+      "comment": "Considered a V7 when I did it. Definitely soft, so V6 sounds about right. Cool Feature.",
+      "sendDate": "2019-12-16",
+      "boulderRatingId": 4,
+      "boulderGradeId": 7,
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "boulderId": 7,
+      "comment": "3rd go. Fun climbing on good holds",
+      "sendDate": "2022-01-28",
+      "boulderRatingId": 4,
+      "boulderGradeId": 7,
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "boulderId": 26,
+      "comment": "Powerful crimp climbing.soft",
+      "sendDate": "2021-12-26",
+      "boulderRatingId": 5,
+      "boulderGradeId": 9,
+      "userId": 1,
+      "id": 18
+    },
+    {
+      "boulderId": 16,
+      "comment": "First V5, sent way. crimpss ",
+      "sendDate": "2018-06-20",
+      "boulderRatingId": 4,
+      "boulderGradeId": 6,
+      "userId": 1,
+      "id": 19
+    },
+    {
+      "boulderId": 18,
+      "comment": "My anti-style. But I loved it",
+      "sendDate": "2021-01-25",
+      "boulderRatingId": 5,
+      "boulderGradeId": 7,
+      "userId": 1,
+      "id": 23
+    },
+    {
+      "boulderId": 5,
+      "comment": "Fun climb in the front. Worth doing",
+      "sendDate": "2022-12-14",
+      "boulderRatingId": 4,
+      "boulderGradeId": 6,
+      "userId": 1,
+      "id": 24
+    },
+    {
+      "boulderId": 2,
+      "comment": "Good climb!",
+      "sendDate": "",
+      "boulderRatingId": 5,
+      "boulderGradeId": 8,
+      "userId": 1,
+      "id": 25
     }
   ],
   "userTickList": [
@@ -988,19 +1032,30 @@
       "boulderGradeId": 6,
       "boulderSteepId": 3,
       "boulderHoldTypeId": 2,
-      "userId": 1,
-      "id": 7
+      "userId": 4,
+      "id": 13
     },
     {
-      "boulderId": 5,
-      "boulderName": "Genghis Khan",
-      "cragId": 1,
-      "sectorId": 2,
-      "boulderGradeId": 6,
-      "boulderSteepId": 3,
+      "boulderId": 25,
+      "boulderName": "Nine Lives",
+      "cragId": 25,
+      "sectorId": "",
+      "boulderGradeId": 10,
+      "boulderSteepId": 1,
       "boulderHoldTypeId": 2,
       "userId": 1,
-      "id": 8
+      "id": 16
+    },
+    {
+      "boulderId": 23,
+      "boulderName": "Ninja Camp Roof",
+      "cragId": 24,
+      "sectorId": 2,
+      "boulderGradeId": 10,
+      "boulderSteepId": 1,
+      "boulderHoldTypeId": 2,
+      "userId": 1,
+      "id": 20
     },
     {
       "boulderId": 4,
@@ -1011,29 +1066,7 @@
       "boulderSteepId": 3,
       "boulderHoldTypeId": 1,
       "userId": 1,
-      "id": 9
-    },
-    {
-      "boulderId": 3,
-      "boulderName": "Pancake Mantle",
-      "cragId": 1,
-      "sectorId": 1,
-      "boulderGradeId": 5,
-      "boulderSteepId": 3,
-      "boulderHoldTypeId": 1,
-      "userId": 1,
-      "id": 10
-    },
-    {
-      "boulderId": 5,
-      "boulderName": "Genghis Khan",
-      "cragId": 1,
-      "sectorId": 2,
-      "boulderGradeId": 6,
-      "boulderSteepId": 3,
-      "boulderHoldTypeId": 2,
-      "userId": 4,
-      "id": 13
+      "id": 21
     }
   ]
 }

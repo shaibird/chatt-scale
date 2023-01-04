@@ -8,7 +8,7 @@ body {
   border-radius: 10px;
   padding: 15px 25px;
   width: 100%;
-  max-width: 200px;
+  max-width: 300px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -30,12 +30,8 @@ body {
   border-radius: 10px;
   padding: 15px 25px;
   width: 100%;
-  max-width: 400px;
-  display: flex;
-  text-align: left;
-  justify-content: space-between;
+  max-width: 600px;
   border: 2px solid #3c6e71;
-  justify-content: center;
 }
 
 .userTickList {
@@ -43,18 +39,15 @@ body {
   border-radius: 10px;
   padding: 15px 25px;
   width: 100%;
-  max-width: 400px;
+  max-width: 430px;
   display: flex;
   justify-content: space-between;
   border: 2px solid #3c6e71;
   text-align: left;
   flex-direction: column;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
-.profile {
-  text-align: center;
-}
 
 .piece {
   text-align: left;
@@ -82,9 +75,7 @@ body {
   letter-spacing: 1px;
   margin-bottom: 25px;
 }
-.ascents-clock {
-  justify-content: left;
-}
+
 
 .profile-header {
   color: #3c6e71;
@@ -101,20 +92,20 @@ body {
   color: #353535;
   font-weight: 500;
   text-align: center;
-  justify-content: center;
 }
 
 .profile-title {
+  display: flex;
+  flex-direction: row;
   color: #3c6e71;
   font-weight: 600;
   font-size: 25px;
   letter-spacing: 1px;
   justify-content: center;
-  align-items: center;
 }
 
 .panel-button {
-  border: 1px solid #9dd1ff;
+  border: 1px solid #3c6e71;
   border-radius: 10px;
   color: white;
   display: inline-block;
@@ -129,7 +120,7 @@ body {
 }
 
 .send_delete {
-  border: 1px solid #9dd1ff;
+  border: 1px solid #3c6e71;
 }
 
 .panel-button:hover,
@@ -145,31 +136,17 @@ body {
 
 }
 
-.edit-button {
-  margin-left: 10px
-}
-
 
 .profile-header {
   text-align: center;
 }
 
-.tick {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 2px solid lightgray;
-  padding-bottom: 10px
-}
 
 .edit-button {
   width: 50px;
   background-color: white;
   color: #353535;
   border: 1px solid #353535;
-  justify-content: right;
-  margin-left: 150px
 }
 
 .tick_delete {
@@ -190,13 +167,13 @@ body {
 
 .Name {
   font-weight: 700;
+  font-size: 16px;
 }
 
 .second {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
   padding-left: 10px
 }
 
@@ -204,12 +181,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding-left: 10px
+  padding-left: 10px;
+  width: 100;
+  justify-self: right;
+
 }
 
 .description {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .grade {
@@ -217,11 +196,44 @@ body {
   padding-top: 10px
 }
 
-.sends {
-  margin-top: 50px;
+
+.tick-buttons {
+  justify-content: right;
+  display: flex;
+  
+}
+
+.info {
   display: flex;
   flex-direction: row;
+}
+
+.button {
+display:flex;
+flex-direction: row;
+}
+
+.second-row {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
   border-bottom: 2px solid lightgray;
-  padding-bottom: 10px;
-  justify-content: left;
+  padding-bottom: 5px;
+ 
+}
+
+.boulder-crag {
+  display: flex;
+  margin-top: 5px;
+  font-size: small;
+  margin-left: 5px;
 }

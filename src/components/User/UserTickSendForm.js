@@ -142,7 +142,7 @@ export const UserTickSendForm = ({ setModal, filteredBoulders, getTicks, getSend
                                 <label>Date</label>
                                 <input type='date'
                                     min="2012-01-01"
-                                    max="2022-12-31"
+                                    max="2023-12-31"
                                     onChange={(evt) => {
                                         const copy = { ...send };
                                         copy.sendDate = evt.target.value;

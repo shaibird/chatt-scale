@@ -38,8 +38,6 @@ export const UserSendList = ({ getSends, filtered }) => {
     }
 
     console.log(filtered)
-// matching the ids in the send list, to the actual boulder so we can display the boulder information
-// not getting all of the boulders in the list. It's stopping after the first match. 
 
 return <>
     <div className="profile-panel">
@@ -52,11 +50,11 @@ return <>
                             <header className="sends">
                                 <div className="details">
                                 <div className="Name">{send.boulder.boulderName}</div> 
-                                <div className="secondSend"><div className="grade"> {send.boulderGrade.boulderGrade}</div> <div className="description">Comment: {send.comment}</div>
-                                <button className="edit-button" onClick={() => {
+                                <div className="second-row"><div className="info"><div className="grade">{send.boulderGrade.boulderGrade}</div> <div className="description">Comment: {send.comment}</div></div>
+                                <div className="button"><button className="edit-button" onClick={() => {
                                 setFilteredSend(send);
                                 toggleModal()
-                                }}>Edit</button></div>
+                                }}>Edit</button></div></div>
                                 </div>
                                 </header>
                         </section>
