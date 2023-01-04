@@ -7,7 +7,7 @@ import axios from 'axios';
 export const GetWeather = (props) => {
   const [forecast, setForecast] = useState(null);
 
-  const api_key = "725b7899469aa9a7c3fdb66722cc4b3a"
+  const api_key = 
 
   useEffect(() => {
     async function getForecast() {
