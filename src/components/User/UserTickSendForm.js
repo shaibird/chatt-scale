@@ -43,9 +43,9 @@ export const UserTickSendForm = ({ setModal, filteredBoulders, getTicks, getSend
                 fetch(`http://localhost:8088/UserTickList/${filteredBoulders.id}`, {
                     method: "DELETE"
                 })
-                .then(() => {
-                    setModal(false)
-                })
+                    .then(() => {
+                        setModal(false)
+                    })
                     .then(() => {
                         getTicks()
                     })
@@ -73,7 +73,7 @@ export const UserTickSendForm = ({ setModal, filteredBoulders, getTicks, getSend
 
     return (
         <>
-            (
+            
             <form className="userSendForm">
                 <div className="modal">
                     <div className="overlay">
@@ -142,7 +142,7 @@ export const UserTickSendForm = ({ setModal, filteredBoulders, getTicks, getSend
                                 <label>Date</label>
                                 <input type='date'
                                     min="2012-01-01"
-                                    max="2022-12-31"
+                                    max="2023-12-31"
                                     onChange={(evt) => {
                                         const copy = { ...send };
                                         copy.sendDate = evt.target.value;

@@ -1,0 +1,166 @@
+.boulders {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.boulder-panel {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #3c6e71;
+  flex-direction: column;
+}
+
+.boulder {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
+}
+
+.boulder:last-child {
+  border-bottom: none;
+}
+
+.Grade {
+  margin-right: 10px;
+  text-align: center;
+  align-self: center;
+}
+
+
+.details-tick {
+  background-color: white;
+  border: 1px solid #3c6e71;
+  border-radius: 10px;
+  color: #3c6e71;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin: 15px 0;
+  transition: background-color 200ms ease-in-out;
+  justify-content: right;
+  font-size: 12px;
+}
+
+.details-tick:hover,
+.pricing-button:focus {
+  background-color: #3c6e71;
+  ;
+}
+
+.details-send {
+  background-color: white;
+  border: 1px solid #3c6e71;
+  border-radius: 10px;
+  color: #3c6e71;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin: 15px 0;
+  transition: background-color 200ms ease-in-out;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.details-send:hover,
+.pricing-button:focus {
+  background-color: #3c6e71;
+  ;
+}
+
+.boulderfield-details {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 20%;
+  max-width: 900px;
+  display: flex;
+  text-align: center;
+  border: 2px solid #3c6e71;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.CragName {
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.Name {
+  display: flex;
+  font-size: 20px;
+  margin-top: 10px;
+
+}
+
+.location {
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.crag-description {
+  text-align: left;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.crag-access {
+  text-align: left;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+.details-header {
+  font-weight: bold;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.item-img {
+  padding-top: 10px;
+  max-width: 60%;
+  height: auto;
+  align-self: center;
+}
+
+.second-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.description {
+  align-self: center;
+  text-align: left;
+}
+
+.Grade {
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+}
+
+.style {
+  display: flex;
+  margin-left: 5px;
+  font-size: medium;
+  padding-top: 10px
+}

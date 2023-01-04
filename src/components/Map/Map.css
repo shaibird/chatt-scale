@@ -1,0 +1,30 @@
+.popup-crag a {
+    color: #353535;
+    font-weight:bold;
+    text-decoration: none;
+    font-size:1.5em;
+}
+.popup-crag a:hover {
+    color:#3c6e71;
+}
+
+.leaflet-popup {
+    width: 325px
+ }
+
+ .popup-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+ }
+
+ .popup-panel:first-child {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+ .weather-weather {
+    justify-content: center;
+ }

@@ -65,7 +65,6 @@ export const UserSendForm = ({ setModal, filteredBoulders }) => {
             <form className="userSendForm">
                 <div className="modal">
                     <div className="overlay">
-                    {/* figure out how to route the boulder that the button was selected from and render the name, while holding the id */}
                     <div className="modal-content">
                         <h2 className="sendForm__title">{filteredBoulders.boulderName}</h2>
                         <fieldset>

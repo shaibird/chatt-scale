@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
+import { MapDisplay } from "../Map/MapDisplay"
 import { Crag } from "./Crags"
+import '../Map/MapDisplay.css'
 
 export const CragList = ({ searchTermState }) => {
     const [crags, setCrags] = useState([])
@@ -24,13 +26,16 @@ export const CragList = ({ searchTermState }) => {
         [searchTermState]
     )
 
-
     return <article className="crags">
+
+   <div className = "crag-container">
         {
             crags.map(crag => <Crag key={`crag--${crag.id}`}
                     id={crag.id} cragName={crag.cragName} />)
                     
-        }
+        }        
+        </div>
+
     </article>
     
 }

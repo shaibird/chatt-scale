@@ -1,95 +1,239 @@
-
-
 body {
-	line-height: 1;
-    font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
 }
 
 .right-panel {
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px 25px;
-    width: 100%;
-    max-width: 200px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    border: 2px solid #3c6e71;
-    margin-right: 15px;
-}
-
-.panel {
   background-color: white;
   border-radius: 10px;
   padding: 15px 25px;
   width: 100%;
-  max-width: 900px;
+  max-width: 300px;
   display: flex;
   text-align: center;
   justify-content: center;
   border: 2px solid #3c6e71;
+  margin-right: 15px;
 }
 
-.profile {
-    text-align:left;
+.navbar-container img {
+  height: 100px;
+  width: 310px;
+  align-self: center;
+}
+.panel {
+  display: flex;
+  flex-direction: row;
+}
+.userSendList {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid #3c6e71;
 }
 
-.profile-panel {
-    border-left: 2px solid #3c6e71
+.userTickList {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #3c6e71;
+  text-align: left;
+  flex-direction: column;
+  margin-left: 15px;
 }
 
-.profile-panel:first-child {
-    border-left: none;
+
+.piece {
+  text-align: left;
 }
+
+.panel-features {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+
+
 
 .center-panel {
-    display:flex;
-    justify-content: center;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
-.profile-header {
-  color:#3c6e71;
+
+.profile h2 {
+  color: #3c6e71;
   font-weight: 600;
   font-size: 25px;
   letter-spacing: 1px;
   margin-bottom: 25px;
 }
 
+
+.profile-header {
+  color: #3c6e71;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
 .panel-features {
   margin: 50px 0 25px;
   color: #353535;
   font-weight: 500;
-  text-align: center
+  text-align: center;
+}
+
+.profile-title {
+  display: flex;
+  flex-direction: row;
+  color: #3c6e71;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  justify-content: center;
 }
 
 .panel-button {
-  border: 1px solid #9dd1ff;
+  border: 1px solid #3c6e71;
   border-radius: 10px;
-  color: #3c6e71;
+  color: white;
   display: inline-block;
   padding: 10px 25px;
   text-decoration: none;
   margin: 25px 0;
+  margin-left: 35px;
   transition: background-color 200ms ease-in-out;
+  text-align: center;
+  width: 150px;
   justify-content: center;
 }
+
 .send_delete {
-    border: 1px solid #9dd1ff;
-}
-.panel-button:hover, .pricing-button:focus {
-  background-color: #3c6e71;;
+  border: 1px solid #3c6e71;
 }
 
-@media (min-width: 900px){
+.panel-button:hover,
+.pricing-button:focus {
+  background-color: #3c6e71;
+  ;
+}
+
+@media (min-width: 900px) {
   .panel {
     flex-direction: row;
   }
-  .pricing-plan {
-    border-bottom: none;
-    border-right: 1px solid #e1f1ff;
-    padding: 25px 50px;
-  }
-  .pricing-plan:last-child {
-    border-right: none;
-  }
+
+}
+
+
+.profile-header {
+  text-align: center;
+}
+
+
+.edit-button {
+  width: 50px;
+  background-color: white;
+  color: #353535;
+  border: 1px solid #353535;
+}
+
+.tick_delete {
+  width: 50px;
+  background-color: white;
+  color: #353535;
+  border: 1px solid #353535;
+  margin-left: 20px;
+}
+
+.log {
+  width: 60px;
+  background-color: white;
+  color: #353535;
+  border: 1px solid #353535;
+  margin-left: 170px;
+}
+
+.Name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px
+}
+
+.secondSend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  width: 100;
+  justify-self: right;
+
+}
+
+.description {
+  margin-left: 10px;
+}
+
+.grade {
+  font-weight: 600;
+  padding-top: 10px
+}
+
+
+.tick-buttons {
+  justify-content: right;
+  display: flex;
+  
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+display:flex;
+flex-direction: row;
+}
+
+.second-row {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 5px;
+ 
+}
+
+.boulder-crag {
+  display: flex;
+  margin-top: 5px;
+  font-size: small;
+  margin-left: 5px;
 }

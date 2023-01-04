@@ -2,12 +2,14 @@ import { useState, useEffect } from "react"
 import { BsTrash } from 'react-icons/bs'
 import { Link, useNavigate } from "react-router-dom"
 import { UserDeleteButton } from "./UserDeleteButton"
+import { UserSendEdits } from "./UserSendEdit"
 import './Profile.css'
 
 
-export const UserSendList = () => {
-    const [userSends, setUserSends] = useState([])
+export const UserSendList = ({ getSends, filtered }) => {
     const [allBoulders, setAllBoulders] = useState([])
+    const [modal, setModal] = useState(false)
+    const [filteredSend, setFilteredSend] = useState([])
 
     const localScaleUser = localStorage.getItem("scale_user")
     const scaleUserObject = JSON.parse(localScaleUser)
@@ -16,19 +18,11 @@ export const UserSendList = () => {
 
 
     //This fetch gets the user specific send list based on the user who is logged in. 
-    const getAllSends = () => {
-
-        fetch(`http://localhost:8088/userSendList?user=${scaleUserObject.id}&_expand=boulder&_expand=boulderGrade`)
-            .then(response => response.json())
-            .then((data) => {
-                setUserSends(data)
-            })
-    }
 
 
     useEffect(
         () => {
-            getAllSends()
+            getSends()
 
             fetch(`http://localhost:8088/crags`)
                 .then(response => response.json())
@@ -39,28 +33,38 @@ export const UserSendList = () => {
         []
     )
 
+    const toggleModal = () => {
+        setModal(!modal)
+    }
 
-    // matching the ids in the send list, to the actual boulder so we can display the boulder information
-    // not getting all of the boulders in the list. It's stopping after the first match. 
+    console.log(filtered)
 
-    return <>
-        <div className="profile-panel">
+return <>
+    <div className="profile-panel">
         <article className="userSendList" >
-            <header className="profile-header">Ascents</header>
-            <div className="panel-features">
-            {userSends.map(
-                (send) => {
-                    return <section className="ascents" key={`ascent--${send.id}`} id={`${send.id}`}>
-                        <header>
-                            <Link to={`UserSendList/${send.id}/edit`}>{send.boulder.boulderName}</Link>  Perceived Grade: {send.boulderGrade.boulderGrade} Comment: {send.comment}</header><UserDeleteButton send={send} getSends={getAllSends} />
-                    </section>
-                
-                }
-            )
-            }
-            </div>
+            <header className="profile-title">Ascents</header>
+            <div className="ascents-block">
+                {filtered.map(
+                    (send) => {
+                        return <section className="ascents" key={`ascent--${send.id}`} id={`${send.id}`}>
+                            <header className="sends">
+                                <div className="details">
+                                <div className="Name">{send.boulder.boulderName}</div> 
+                                <div className="second-row"><div className="info"><div className="grade">{send.boulderGrade.boulderGrade}</div> <div className="description">Comment: {send.comment}</div></div>
+                                <div className="button"><button className="edit-button" onClick={() => {
+                                setFilteredSend(send);
+                                toggleModal()
+                                }}>Edit</button></div></div>
+                                </div>
+                                </header>
+                        </section>
 
+                    }
+                )
+                }
+            </div>
+            {modal && <UserSendEdits send={filteredSend} setModal={setModal}/>}
         </article>
-</div>
-    </>
+    </div>
+</>
 }

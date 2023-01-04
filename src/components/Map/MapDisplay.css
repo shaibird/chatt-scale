@@ -1,0 +1,59 @@
+
+.leaflet-container {
+    width: 100%;
+    height: calc(100vh - 60px);
+  }
+  
+  .crag-container {
+    display: inline;
+    position: fixed;
+    left: 0;
+    background-color: white;
+    z-index: 999;
+    transform: translateX(10%) translateY(20%);
+    padding: 4px;
+    border: 2px solid #3c6e71;
+    border-radius: 10px;
+  }
+  .crag-container a{
+    color: #353535;
+    font-weight:bold;
+    text-decoration: none;
+    font-size:1em;
+    padding: 6px
+
+  }
+
+  .crag-container a:hover {
+    color:#3c6e71;
+}
+  
+.cragButton {
+  display: inline;
+  position: fixed;
+  left: 0;
+  background-color: white;
+  z-index: 999;
+  transform: translateX(40%) translateY(100%);
+  padding: 5px 15px;
+  border: 2px solid #3c6e71;
+  border-radius: 10px;
+  font-weight: bold;
+  width:250px;
+  color: #353535;
+ 
+  
+  
+}
+
+.cragButton:hover {
+  position:fixed;
+  transform:translateX(40%) translateY(100%);
+  padding: 5px 15px;
+  color: #3c6e71;
+  font-weight:bold;
+}
+
+.each-crag {
+  padding: 3px;
+}

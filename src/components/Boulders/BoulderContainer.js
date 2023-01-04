@@ -8,7 +8,7 @@ export const BoulderContainer = () => {
     const [searchTerms, setSearchTerms] = useState("")
 
     return <>
-        <BoulderSearch setterFunction={setSearchTerms}/>
+        {/* <BoulderSearch setterFunction={setSearchTerms}/> */}
         <CragList searchTermState={searchTerms}/>
     </>
                 
